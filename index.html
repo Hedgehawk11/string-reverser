@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Reverser</title>
+</head>
+<body>
+    <h1>String Reverser</h1>
+    <input type="text" id="inputString" placeholder="Enter text">
+    <button onclick="reverseString()">Reverse</button>
+    <p id="result"></p>
+
+    <script>
+        function reverseString() {
+            const input = document.getElementById('inputString').value;
+            const reversed = input.split('').reverse().join('');
+            document.getElementById('result').textContent = reversed;
+        }
+    </script>
+</body>
+</html>
